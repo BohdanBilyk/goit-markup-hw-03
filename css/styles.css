@@ -82,7 +82,6 @@ address {
 .site-nav {
   align-items: center;
   display: flex;
-  color: var(--color-text);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
@@ -111,18 +110,7 @@ address {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.link {
-  /* text-decoration: none; */
 
-  /* color: var(--color-text);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.15;
-  letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  display: block; */
-}
 .link :hover,
 :focus,
 .current {
@@ -146,8 +134,7 @@ address {
 }
 .list-contact {
   display: flex;
-  list-style: none;
-  margin: 0px;
+
 }
 
 .link-gray {
@@ -208,7 +195,6 @@ padding-bottom: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
 
-
   display: flex;
   letter-spacing: 0.06em;
 }
@@ -235,7 +221,7 @@ padding-bottom: 200px;
 .list {
   justify-content: space-between;
 }
-.advantage .container {
+.container {
   justify-content: space-between;
 }
 .advantage {
@@ -244,16 +230,28 @@ padding-bottom: 200px;
 .advantage-site {
   display: flex;
 }
+
+.advantage-text {
+  margin-right: 30px;
+  width:270px ;
+}
+
 .title-advantage {
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 30px;
 }
+
+.work {
+  padding-top: 0;
+}
+
 /* team */
+
 .team {
   background-color: var(--color-button);
+
 }
 .container.team {
   background-color: var(--color-button);
@@ -271,42 +269,45 @@ padding-bottom: 200px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 .list-team {
   padding-left: 0px;
-  display: flex;
   justify-content: space-between;
-  list-style: none;
   margin: 0;
   display: flex;
 }
 
-.team-li {
+.stone {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 270px;
   background-color: var(--color-wite);
+}
+.team-li {
   text-align: center;
-  margin-bottom: 94px;
+  list-style: none;
+  
 }
 
 .text {
-  color: #757575;
-  font-weight: 400;
+  color: var(--color-contact);
   font-size: 14px;
   line-height: 1.7;
-  margin-right: 30px;
-  margin-top: 10px;
+  margin-bottom: 0px;
+
 }
 .name {
   font-weight: 500;
   color: var(--color-text);
-  font-size: 1.2;
   letter-spacing: 0.03em;
-  margin-top: 30px;
 }
 /* footer */
+.footer .logo {
+  margin-right: 0px;
+}
 .footer {
-  background-color: #2f303a;
+  background-color: var(--color-contrast);
   text-decoration: none;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -337,44 +338,58 @@ padding-bottom: 200px;
 }
 
 /* <!--меню сайту кнопки--> */
+.button-menu {
+  margin-right: 8px;
+}
 .portfolio-buttons {
   background-color: var(--color-button);
   cursor: pointer;
   border: none;
   border-radius: 4px;
   font-weight: 500;
-  font-size: 1.6;
   letter-spacing: 0.03em;
   color: var(--color-text);
-  margin-right: 8px;
   display: inline-block;
   padding: 6px 22px;
 }
 .portfolio-buttons:hover,
-.portfolio-buttons:focus {
+.portfolio-buttons:focus
+ {
   background-color: var(--color-accent);
   color: var(--color-wite);
 }
 .portfolio-buttons:active {
   background-color: var(--color-wite);
 }
-/* img */
-h3 {
-  margin-top: 20px;
+.portfolio-buttons .current {
+  background-color: var(--color-accent);
 }
+/* img */
 
 .list-img {
-  margin-top: 0px;
   display: flex;
   list-style: none;
   flex-wrap: wrap;
-  padding-inline-start: 0;
+  
+}
+.limit {
+  width: 370px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.limit>h2 {
+  margin-bottom: 4px;
 }
 .img-item {
-  width: 370px;
+  width: calc((100% - 90px )/3);
+  border: 1px solid var(--color-li-portfolio);
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid var(--color-li-portfolio);
+}
+.img-item :nth-child(3n) {
+margin-right: 0;
 }
 
 .benefits {
@@ -384,15 +399,16 @@ h3 {
 }
 .link-portfolio {
   color: var(--color-contact);
-  font-weight: 400;
-  font-size: 7.5;
   text-decoration: none;
+  margin-bottom: 0px;
 }
 
 .list-footer {
   list-style: none;
-  margin-top: 9px;
   padding-left: 0;
+}
+.footer-li {
+  margin-bottom: 9px;
 }
 .link-footer {
   font-weight: 500;
