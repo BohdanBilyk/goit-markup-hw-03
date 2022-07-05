@@ -207,8 +207,17 @@ padding-bottom: 200px;
   background-color: var(--color-wite);
 }
 /* преимущества */
-.visibility {
-  visibility: hidden;
+.visually-hidden  {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .list-subhead {
   padding-left: 0px;
@@ -350,7 +359,8 @@ padding-bottom: 200px;
 .button-menu {
   margin-right: 8px;
 }
-.portfolio-buttons {
+.portfolio-buttons { 
+  color: var(--color-text);
   background-color: var(--color-button);
   cursor: pointer;
   border: none;
@@ -359,20 +369,25 @@ padding-bottom: 200px;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
-  color: var(--color-text);
-  display: inline-block;
+ 
   padding: 6px 22px 6px 22px;
-  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%)
 }
 .portfolio-buttons:hover,
 .portfolio-buttons:focus
  {
   background-color: var(--color-accent);
   color: var(--color-wite);
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%);
+  border-radius: 4px;
 }
 .portfolio-buttons:active {
+  background-color: var(--color-accent);
+  color: var(--color-wite);
   background-color: var(--color-wite);
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%);
+  border-radius: 4px;
 }
+
 .portfolio-buttons.active {
   background-color: var(--color-accent);
   color: var(--color-wite);
@@ -399,7 +414,10 @@ padding-bottom: 200px;
 }
 .title-portfolio {
 font-size: 18px;
-margin-bottom: 4px;
+line-height: 2;
+margin-bottom: 0px;
+
+
 }
 
 .img-item {
@@ -418,8 +436,11 @@ margin-right: 0;
 }
 .link-portfolio {
   color: var(--color-contact);
-  text-decoration: none;
   margin-bottom: 0px;
+  margin-top: 4px;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 00.03em;
 }
 
 
