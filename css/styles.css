@@ -61,8 +61,7 @@ address {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
 }
 
 .section {
@@ -76,7 +75,6 @@ address {
 .page-header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .site-nav {
@@ -86,7 +84,10 @@ address {
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
-  text-decoration: none;
+}
+.site-nav .item {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav .item:not(:last-child) {
@@ -94,6 +95,11 @@ address {
 }
 .site-nav .list.item + .item {
   margin-right: 40px;
+}
+
+.navigation {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .logo {
@@ -105,10 +111,6 @@ address {
   letter-spacing: 0.03em;
   text-decoration: none;
   margin-right: 94px;
-}
-.item {
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .link :hover,
@@ -123,12 +125,8 @@ address {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  text-decoration: none;
 }
 
-.contact {
-  display: flex;
-}
 
 .list-contact .item:not(:last-child) {
   margin-right: 50px;
@@ -142,6 +140,8 @@ address {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
+  padding-top: 32px;
+  padding-bottom: 32px;
   letter-spacing: 0.02em;
   color: var(--color-contact);
 }
@@ -230,9 +230,6 @@ address {
   display: flex;
 }
 
-/* .list {
-  justify-content: space-between;
-} */
 
 .container {
   justify-content: space-between;
@@ -351,7 +348,7 @@ address {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  color: #ffffff;
+  color: var(--color-wite);
   text-decoration: none;
 }
 .footer-adress {
